@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            p{
+                font-size: 25px;
+                color: blue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id = "some-para">This is paragraph</p>
+
+        <script>
+            const para = document.getElementById('some-para')
+            para.addEventListener('click',function(){
+                // alert('you clicked it')
+                para.innerHTML = 'You Clicked It!!!'
+            })
+        </script>
+    </body>
+</html>

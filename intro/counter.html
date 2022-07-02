@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htl>
+    <head>
+        <style>
+            div{
+                text-align: center;
+            }
+            h1{
+            font-size:100px
+        }
+        button{
+            font-size: 30px;
+            border-bottom-color: red;
+            border-bottom-width: thick;
+            border-radius: 10%;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+            <h1 id = "count">0</h1>
+            <button id = "upBtn">Up</button>
+            <button id = "downBtn">Down</button>
+            <button id = "resetBtn">Reset</button>
+
+
+        </div>
+        
+        <script>
+            const count = document.getElementById('count')
+            const upBtn = document.getElementById('upBtn')
+            const downBtn = document.getElementById('downBtn')
+            const resetBtn = document.getElementById('resetBtn')
+
+            upBtn.addEventListener('click',function(){
+                // console.log(parseInt(count.innerHTML))
+                count.innerHTML = parseInt(count.innerHTML)+1
+            })
+
+            downBtn.addEventListener('click',function(){
+                count.innerHTML = parseInt(count.innerHTML)-1
+            })
+
+            resetBtn.addEventListener('click',function(){
+                // count.innerHTML = parseInt(count.innerHTML)-1
+                count.innerHTML = 0
+            })
+        </script>
+    </body>
+</htl>
